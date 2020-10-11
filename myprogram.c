@@ -16,7 +16,9 @@ int sum_of_even_numbers(int *array, int count)
 	for (int i=0;i<count;++i)
 	{
 		//TODO: only add even numbers, e.g., 4. Skip odd numbers, e.g., 3
-		sum += array[i];
+		if (i % 2 == 0){
+			sum += array[i];
+		}
 	}
 	return sum;
 }
@@ -24,6 +26,11 @@ int sum_of_even_numbers(int *array, int count)
 int max_of_numbers(int *array, int count)
 {
 	//TODO: return the maximum number from the array
+		for (int i = 1; i < count; ++i){
+			if (array[0] < array[i]){
+				array[0] = array[i];
+			}
+		}
 	return array[0];
 }
 
