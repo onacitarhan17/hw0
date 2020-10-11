@@ -30,8 +30,8 @@ OBJECTS := $(SOURCES:.c=.o)
 # These are default variables in make, but it is traditional to overwrite them.
 CC=gcc
 CFLAGS= -O2 -g -Wall
-LD=ld
-LDFLAGS= -lSystem
+LD=gcc
+LDFLAGS=
 
 # Make rules are of the form (target) : (pre-requisite). The first make
 # rule in the file the default one executed when you call "make" with no
