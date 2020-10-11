@@ -86,6 +86,11 @@ char alphabet_index(int index)
 {
 	//TODO: for index 0, return A. index 1, B, etc. until 25 for Z.
 	//if index is out of range, return space ' '.
-	return 'A';
+	if(index >= 0 || index < 25)
+	{
+		return 'A' + index;
+	}
+
+	return ' ';
 }
 
