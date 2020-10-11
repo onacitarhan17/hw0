@@ -5,7 +5,7 @@ int sum_of_1_to_n(int n)
 
 	//TODO: sum all numbers from 1 to n
 	for(int i = 1; i <= n; i++){
-		sum += n;
+		sum += i;
 	}
 	return sum;
 }
@@ -39,7 +39,11 @@ int reversed_number(int number)
 	int reversed = number;
 
 	//TODO: if input is 12345, return 54321
-
+	reversed = 0;
+	while(number != 0){
+		reversed = reversed * 10 + number % 10;
+		number /= 10;
+	}
 	return reversed;
 }
 
