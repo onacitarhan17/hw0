@@ -4,7 +4,9 @@ int sum_of_1_to_n(int n)
 	int sum = 0;
 
 	//TODO: sum all numbers from 1 to n
-
+	for(int i = 1; i <= n; i++){
+		sum += n;
+	}
 	return sum;
 }
 
