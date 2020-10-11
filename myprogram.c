@@ -70,8 +70,15 @@ int is_prime(int number)
 int count_primes(int start, int end)
 {
 	//TODO: return the count of prime numbers in range [start, end] inclusive.
-
-	return 0;
+	int count = 0;
+	for(int i = start; i <= end; i++)
+	{
+		if(is_prime(i))
+		{
+			count+=1;
+		}
+	}
+	return count;
 }
 
 
